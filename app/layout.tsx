@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'vynychenko.com - wedding, baloons, party',
-  description: '-',
+  title: 'Студія декору "Я Можу ВСЕ"',
+  description: 'Студія декору "Я Можу ВСЕ"',
 };
 
 export default function RootLayout({

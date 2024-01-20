@@ -9,6 +9,7 @@ export default function Home() {
               &#8221;Я Можу ВСЕ&#8221;
             </span>
           </h2>
+          {/* FIXME: change text after deploy to PRODUCTION */}
           <div className="w-full max-w-[900px] [&>*:nth-child(n+2)]:mt-7 font-serif text-lg">
             <p>Ласкаво просимо на наш веб-сайт!</p>
             <p>
@@ -49,6 +50,10 @@ export default function Home() {
         src="/video/introducing.mp4"
         muted
         autoPlay
+        loop
+        preload="auto"
+        width={1}
+        height={1}
         className="w-full h-full object-cover absolute inset-0"
       />
     </section>

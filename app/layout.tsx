@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import { kurale, philosopher } from '@/utils/fonts';
 
 export const metadata: Metadata = {
   title: 'Студія декору "Я Можу ВСЕ"',
@@ -15,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="uk">
+      <body className={`${philosopher.variable} ${kurale.variable}`}>{children}</body>
     </html>
   );
 }

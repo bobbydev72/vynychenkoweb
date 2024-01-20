@@ -1,0 +1,12 @@
+pre-push:
+  parallel: true
+  commands:
+    tsc-check:
+      tags: TypeScript check
+      run: yarn tsc:check
+    eslint:
+      tags: ESlint
+      run: yarn lint
+    prettier:
+      tags: Prettier
+      run: yarn prettier

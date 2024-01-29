@@ -1,9 +1,21 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <section className="relative min-h-screen before:absolute before:inset-0 before:w-full before:h-full before:bg-white/80 before:z-40">
       <div className="container mx-auto px-4 md:px-0">
         <div className="relative py-6 md:py-0 flex flex-col items-center justify-center min-h-screen my-auto text-center z-50">
-          <h2 className="text-5xl md:text-6xl mb-5 md:mb-12">
+          <div className="flex items-center justify-center w-[12rem] h-[12rem] overflow-hidden rounded-full shadow-md mb-10">
+            <Image
+              src="/img/logo.webp"
+              width={200}
+              height={200}
+              alt="vynychenko.com Logo"
+              className="w-full h-full object-cover"
+              quality={100}
+            />
+          </div>
+          <h2 className="text-6xl md:text-6xl mb-5 md:mb-12">
             Студія декору{' '}
             <span className="text-blue-600 font-bold font-sans">
               &#8221;Я Можу ВСЕ&#8221;
